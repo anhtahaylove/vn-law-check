@@ -118,7 +118,9 @@ Link toàn văn ở [`sources/legal-references.md`](sources/legal-references.md)
 
 Mình là dev, không phải luật sư. Chỗ nào chưa đối chiếu được với toàn văn, mình ghi thẳng "CHƯA XÁC MINH". Hiện còn vài chục chỗ như vậy, phần lớn ở các giao dịch/thu thập dữ liệu có tính chất đặc thù.
 
-Cách góp ý nhanh nhất là [mở issue](https://github.com/mhfed/vn-law-check/issues/new/choose). Form bằng tiếng Việt, điền mất khoảng 1 phút:
+**Muốn giúp mà chưa biết bắt đầu từ đâu?** Có sẵn [12 việc cần đối chiếu](https://github.com/mhfed/vn-law-check/issues?q=is%3Aissue+is%3Aopen+label%3A%22c%E1%BA%A7n+x%C3%A1c+minh%22), mỗi việc chỉ cần tìm một điều luật và comment kèm link văn bản gốc.
+
+Thấy chỗ sai khác thì [mở issue](https://github.com/mhfed/vn-law-check/issues/new/choose). Form bằng tiếng Việt, điền mất khoảng 1 phút:
 
 - **Báo sai:** sai số điều, văn bản hết hiệu lực, mức phạt chưa đúng
 - **Đề xuất bổ sung:** luật mới, lỗi hay gặp mà checklist chưa có
