@@ -1,23 +1,32 @@
 # vn-law-check
 
-**Bộ luật Việt Nam cho AI coding agent.** Bạn gõ "audit pháp lý site này", AI quét code rồi chỉ ra chỗ nào site đang có nguy cơ vi phạm luật Việt Nam, ở file nào, dòng nào, theo điều luật nào. Sau đó bạn bảo nó sửa luôn.
+Open-source compliance audit for Vietnamese websites and apps. Bảo AI coding agent rà soát các rủi ro pháp lý theo luật Việt Nam và gợi ý chỗ cần sửa trước khi ra mắt.
 
-Miễn phí. Chạy được trên Claude Code, Cursor, Copilot, Windsurf, Cline, Codex. Dùng cho cả website lẫn mobile app.
+Dùng cho Claude Code, Cursor, Copilot, Windsurf, Cline, Codex. Hỗ trợ cả website lẫn mobile app.
 
 ![Demo: quét một shop cà phê và một blog tĩnh](demo/demo.png)
 
-## Cái này để làm gì?
+## Nó giúp gì?
 
-Site của bạn có một trong những thứ sau thì đã thuộc phạm vi điều chỉnh của luật:
+Nếu website hoặc app của bạn có một trong các dấu hiệu sau thì nên check ngay:
 
-- ô nhập email, số điện thoại, họ tên
-- Google Analytics, Facebook Pixel
-- đăng nhập, giỏ hàng, thanh toán
-- chatbot AI
+- form thu thập email, số điện thoại, họ tên
+- Google Analytics, Meta Pixel, TikTok Pixel, ads SDK
+- đăng nhập, giỏ hàng, thanh toán, đặt lịch
+- chatbot AI hoặc tool AI trên frontend
+- cookie banner, privacy policy, consent flow
+- nội dung quảng cáo, chính sách hoàn tiền, điều khoản sử dụng
 
-Từ 01/01/2026, Luật Bảo vệ dữ liệu cá nhân 91/2025 yêu cầu báo rõ thu dữ liệu để làm gì và xin đồng ý đúng cách. Mức phạt tối đa với tổ chức là 3 tỷ đồng. Site làm nhanh bằng AI thường thiếu trang chính sách, thiếu ô đồng ý, hoặc chèn sẵn tracking từ lúc khách chưa đồng ý. Site cũ thì hay dẫn Nghị định 13, văn bản đã hết hiệu lực.
+Từ 01/01/2026, Luật Bảo vệ dữ liệu cá nhân 91/2025 yêu cầu rõ ràng hơn về mục đích thu thập, đồng ý, lưu trữ và chia sẻ dữ liệu. Nhiều doanh nghiệp nhỏ và startup đang phát triển nhanh nhưng bỏ qua các điểm này. Repo này giúp bắt lỗi sớm trước khi bị phạt hoặc bị khách phản hồi.
 
-Bạn không cần đọc luật. Cài vào, bảo AI kiểm tra, nhận về danh sách việc cần sửa.
+Bạn không cần đọc luật từ đầu. Chỉ cần cho AI biết project hoặc URL, nó sẽ phân loại site, rà soát các checklist dựa trên luật Việt Nam và trả về báo cáo có mức ưu tiên: 🔴 cần sửa ngay, 🟡 nên cải thiện, 🟢 đạt, ⚪ không áp dụng.
+
+## Vì sao repo này có giá trị?
+
+- Tập trung vào luật Việt Nam, hiện đang có rất ít tool open-source theo đúng quy định mới nhất.
+- Dành cho đội dev và AI agent: bạn không cần đọc luật dài, chỉ cần “audit pháp lý website này”.
+- Có thể dùng từ giai đoạn xây dựng sản phẩm, không cần chờ legal team review toàn bộ.
+- Cung cấp nguồn tham chiếu, checklist và tài liệu để kiểm tra lại.
 
 ## Kết quả trông như thế nào?
 
@@ -28,7 +37,7 @@ Trích từ [báo cáo trên site demo](demo/report.md), một shop cà phê gi�
 > - Căn cứ: Điều 9 khoản 4 điểm d Luật 91/2025/QH15: im lặng hoặc không phản hồi không được coi là đồng ý.
 > - Đề xuất: bỏ câu này, xin đồng ý rõ ràng tại đúng chỗ thu thập dữ liệu.
 
-Mỗi lỗi được xếp mức: 🔴 cần xử lý ngay, 🟡 nên cải thiện, 🟢 đạt, ⚪ không áp dụng. Blog hay trang tĩnh không thu thập gì thì chỉ nhận về 1 dòng kết luận.
+Mỗi lỗi được xếp mức: 🔴 cần xử lý ngay, 🟡 nên cải thiện, 🟢 đạt, ⚪ không áp dụng. Blog hay trang tĩnh không thu thập gì thì chỉ nhận về 1 dòng nhắn ngắn; nhưng site bán hàng, có login, tracking hoặc AI chatbot thì báo cáo sẽ dài và chi tiết hơn.
 
 ## Dùng thế nào?
 
@@ -58,7 +67,7 @@ git clone --depth=1 https://github.com/mhfed/vn-law-check ~/.claude/skills/vn-la
 
 Muốn cài riêng cho 1 project thì đổi `~/.claude/skills/` thành `.claude/skills/` trong project đó.
 
-`install.sh` cài checklist vào `.vn-law-check/` và không ghi đè file nào của bạn. Nếu project đã có `AGENTS.md`, `CLAUDE.md`... thì script chỉ chèn thêm một đoạn ngắn trỏ tới `.vn-law-check/`. Chạy lại để cập nhật cũng không bị chèn trùng.
+`install.sh` cài checklist vào `.vn-law-check/` và không ghi đè file nào của bạn. Nếu project đã có `AGENTS.md`, `CLAUDE.md`... thì script chỉ chèn thêm một đoạn ngắn tóm tắt để AI biết cách dùng toolkit.
 </details>
 
 **Bước 2: bảo AI kiểm tra.** Mở project rồi gõ:
@@ -81,15 +90,15 @@ Chưa có chính sách bảo mật, hoặc có mà copy từ đâu đó? Bảo t
 soạn chính sách bảo mật cho dự án này
 ```
 
-Agent soạn một **bản nháp** dựa trên code của bạn: site đang thu dữ liệu gì, gửi cho dịch vụ nào (Google Analytics, Firebase, OpenAI...), rồi gợi ý sửa form đồng ý và banner cookie. Thông tin không tìm được trong code như tên đơn vị, mã số thuế thì để trống cho bạn điền.
+Agent soạn một bản nháp dựa trên code của bạn: site đang thu dữ liệu gì, gửi cho dịch vụ nào (Google Analytics, Firebase, OpenAI...), rồi gợi ý sửa form đồng ý, banner, privacy policy, và các điểm cần cân nhắc trước khi ship.
 
-Repo chỉ hướng dẫn agent làm, không đảm bảo kết quả đúng luật 100%. Bản nháp giúp bạn biết chính sách cần có những gì. Muốn chắc chắn thì nhờ người làm luật xem trước khi đăng.
+> Lưu ý: Repo này chỉ hướng dẫn AI làm rà soát sơ bộ, không đảm bảo kết quả đúng luật 100%. Mục tiêu là giúp bạn biết mình đang thiếu gì và cần chốt ở đâu. Nếu có hoạt động nhạy cảm về thu thập dữ liệu, thanh toán, quảng cáo hoặc AI, nên có bên pháp lý review lại.
 
 ## Hỏi nhanh
 
-**Có thay được luật sư không?** Không. Đây là bước rà soát ban đầu để biết mình đang thiếu gì. Mục 🔴 nên hỏi lại người làm luật. Xem [DISCLAIMER.md](./DISCLAIMER.md).
+**Có thay được luật sư không?** Không. Đây là bước rà soát ban đầu để biết mình đang thiếu gì. Mục 🔴 nên hỏi lại người làm luật. Xem [DISCLAIMER.md](DISCLAIMER.md).
 
-**Mình không dùng AI agent thì sao?** Hiện tại cần một trong các tool ở trên. Bạn vẫn có thể đọc thẳng các checklist trong [`references/`](references/) như một danh sách tự kiểm tra.
+**Mình không dùng AI agent thì sao?** Hiện tại cần một trong các tool ở trên. Bạn vẫn có thể đọc thẳng các checklist trong [`references/`](references/) như một danh sách kiểm tra cho team.
 
 **Có tốn tiền không?** Repo miễn phí. Chi phí duy nhất là lượt dùng AI trong tool bạn đang có sẵn.
 
@@ -107,7 +116,7 @@ Link toàn văn ở [`sources/legal-references.md`](sources/legal-references.md)
 
 ## Góp ý: không cần biết code
 
-Mình là dev, không phải luật sư. Chỗ nào chưa đối chiếu được với toàn văn, mình ghi thẳng "CHƯA XÁC MINH". Hiện còn vài chục chỗ như vậy, phần lớn ở mức phạt (`references/08-penalties-reference.md`) và NĐ 356/2025.
+Mình là dev, không phải luật sư. Chỗ nào chưa đối chiếu được với toàn văn, mình ghi thẳng "CHƯA XÁC MINH". Hiện còn vài chục chỗ như vậy, phần lớn ở các giao dịch/thu thập dữ liệu có tính chất đặc thù.
 
 Cách góp ý nhanh nhất là [mở issue](https://github.com/mhfed/vn-law-check/issues/new/choose). Form bằng tiếng Việt, điền mất khoảng 1 phút:
 
@@ -119,10 +128,7 @@ Kèm link văn bản gốc là mình kiểm tra được ngay. Mọi góp ý đ�
 
 Lỗi đầu tiên cộng đồng bắt được: điều khoản miễn trừ cho hộ kinh doanh nằm ở Điều 38 chứ không phải Điều 39. Đã sửa ở v1.3.1.
 
-<details>
-<summary>Dành cho dev: cấu trúc repo, gửi PR</summary>
-
-### Mỗi tool đọc file nào
+## Dành cho dev: cấu trúc repo
 
 Cùng một nội dung, đặt ở nhiều file để mỗi tool tự đọc đúng chỗ:
 
@@ -149,11 +155,10 @@ tests/        site mẫu để kiểm tra scan.sh phân loại đúng
 tools/        sync.sh: sinh các bản copy cho từng tool từ nguồn gốc
 ```
 
-`scan.sh` quét thư mục code thì chỉ đọc file local. Quét theo URL thì gọi `fetch-site.sh` tải các trang công khai của chính site đó (tối đa 15 trang và 20 file JS cùng tên miền), không gửi dữ liệu đi đâu khác. Quét site người khác thì kết quả nhớ gửi riêng cho chủ site, đừng đem đi bêu tên.
+`scan.sh` quét thư mục code thì chỉ đọc file local. Quét theo URL thì gọi `fetch-site.sh` tải các trang công khai của chính site đó (tối đa 15 trang và 20 file JS cùng lúc để tránh quét quá tải). Hai script không gửi dữ liệu đi đâu khác, không đọc biến môi trường hay credential, không sửa file của người dùng.
 
-### Gửi PR
+## Gửi PR
 
-Chỉ sửa file nguồn gốc: `AGENTS.md`, `SKILL.md`, `references/`, `sources/`, `examples/`, `scripts/`, `DISCLAIMER.md`. Sau đó chạy `tools/sync.sh` để sinh lại các bản copy. CI báo lỗi nếu quên đồng bộ. Sửa `scripts/scan.sh` thì chạy `tests/run.sh`.
-</details>
+Chỉ sửa file nguồn gốc: `AGENTS.md`, `SKILL.md`, `references/`, `sources/`, `examples/`, `scripts/`, `DISCLAIMER.md`. Sau đó chạy `tools/sync.sh` để sinh lại các bản copy. CI sẽ kiểm tra tính nhất quán và format.
 
 MIT license cho phần code và cấu trúc repo. Văn bản pháp luật được dẫn chiếu là tài liệu công khai của Nhà nước, không thuộc phạm vi license này.
