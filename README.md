@@ -102,7 +102,7 @@ Agent soạn một bản nháp dựa trên code của bạn: site đang thu dữ
 
 **Có tốn tiền không?** Repo miễn phí. Chi phí duy nhất là lượt dùng AI trong tool bạn đang có sẵn.
 
-**Theo luật nào?** Các văn bản mới nhất tới 11/2026:
+**Theo luật nào?** Các văn bản mới nhất, đối chiếu lần gần nhất ngày 03/11/2026:
 - Luật Bảo vệ dữ liệu cá nhân 91/2025 + NĐ 356/2025
 - Luật Thương mại điện tử 122/2025 + NĐ 248/2026
 - Luật An ninh mạng 116/2025 + NĐ 333/2026
@@ -126,7 +126,7 @@ Cách góp ý nhanh nhất là [mở issue](https://github.com/mhfed/vn-law-chec
 
 Kèm link văn bản gốc là mình kiểm tra được ngay. Mọi góp ý được nhận đều ghi tên người góp ý trong bản cập nhật.
 
-Lỗi đầu tiên cộng đồng bắt được: điều khoản miễn trừ cho hộ kinh doanh nằm ở Điều 38 chứ không phải Điều 39. Đã sửa ở v1.3.1.
+Mọi chỗ từng ghi sai và đã sửa được liệt kê ở [lịch sử đính chính](sources/legal-references.md#lịch-sử-đính-chính-nội-dung-luật), để ai dùng bản cũ biết cần xem lại gì. Lỗi đầu tiên do cộng đồng bắt: miễn trừ cho hộ kinh doanh nằm ở Điều 38 chứ không phải Điều 39.
 
 ## Dành cho dev: cấu trúc repo
 

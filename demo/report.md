@@ -45,12 +45,12 @@
 
 **3. Ô "đồng ý nhận email khuyến mãi" được tích sẵn**: 01-B
 - `index.html:45`: `<input type="checkbox" name="marketing" checked>`
-- Căn cứ: Điều 9 Luật 91/2025/QH15 (đồng ý phải tự nguyện, rõ ràng); NĐ 356/2025/NĐ-CP cấm tích sẵn mặc định (số điều cần tra cứu lại).
+- Căn cứ: Điều 9 Luật 91/2025/QH15 (đồng ý phải tự nguyện, rõ ràng); khoản 3 Điều 6 NĐ 356/2025/NĐ-CP cấm thiết lập mặc định đồng ý.
 - Đề xuất: bỏ thuộc tính `checked`, lưu thời điểm người dùng tích vào (`api/subscribe.js` đang chỉ lưu giá trị `marketing`, không lưu thời điểm).
 
 **4. Google Analytics và Facebook Pixel chạy ngay khi tải trang**: 01-C
 - `index.html:7-10`: hai script nạp vô điều kiện, không có banner xin đồng ý.
-- Căn cứ: Điều 28 Luật 91/2025/QH15 (xử lý dữ liệu cho quảng cáo cần đồng ý và phải có cách từ chối); NĐ 356/2025 xếp dữ liệu theo dõi hành vi trực tuyến vào nhóm nhạy cảm.
+- Căn cứ: khoản 8 Điều 28 Luật 91/2025/QH15 (chỉ được thu thập dữ liệu qua theo dõi website để quảng cáo theo hành vi khi có đồng ý, phải có cách từ chối); điểm l khoản 1 Điều 4 NĐ 356/2025 xếp dữ liệu theo dõi hành vi trực tuyến vào nhóm nhạy cảm.
 - Đề xuất: thêm banner cookie, chỉ nạp GA/Pixel sau khi người dùng bấm đồng ý, và cho phép từ chối mà vẫn mua hàng được.
 
 **5. Không thấy dấu hiệu đã thông báo website với Bộ Công Thương**: 02-B
@@ -99,9 +99,10 @@ Footer ghi đây là hộ kinh doanh (`index.html:59`). Theo khoản 3 Điều 3
 Miễn trừ mất hiệu lực nếu shop xử lý dữ liệu nhạy cảm hoặc dữ liệu số lượng lớn. Shop đang gắn Google Analytics và Facebook Pixel; NĐ 356/2025 xếp dữ liệu theo dõi hành vi trực tuyến vào nhóm nhạy cảm, nên miễn trừ có thể không áp dụng. Điểm này chưa có hướng dẫn rõ, cần hỏi người làm luật. Miễn trừ cũng không bỏ được nghĩa vụ công khai và xin đồng ý ở các mục 1-4.
 
 ## Mức phạt tham khảo (cho các mục 🔴 về dữ liệu cá nhân)
-- Xử lý dữ liệu không có đồng ý (mục 3, 4): 30-50 triệu đồng (NĐ 330/2026/NĐ-CP).
-- Coi im lặng là đồng ý (mục 2): 50-70 triệu đồng (NĐ 330/2026/NĐ-CP).
-- Trần chung với các hành vi khác: 3 tỷ đồng với tổ chức, 1/2 mức đó với cá nhân (Điều 8 khoản 5, 6 Luật 91/2025/QH15).
+Shop là hộ kinh doanh nên bị phạt như cá nhân, bằng 1/2 mức của tổ chức (khoản 3 Điều 2, khoản 1 Điều 7 NĐ 330/2026/NĐ-CP).
+- Xử lý dữ liệu không có đồng ý, ô tích sẵn (mục 3, 4): 15-25 triệu đồng (Điều 43 khoản 1 NĐ 330/2026/NĐ-CP; tổ chức 30-50 triệu).
+- Coi im lặng là đồng ý (mục 2): 25-35 triệu đồng (Điều 43 khoản 2 NĐ 330/2026/NĐ-CP; tổ chức 50-70 triệu).
+- Trần chung với các hành vi khác: 1,5 tỷ đồng với cá nhân, hộ kinh doanh; 3 tỷ với tổ chức (Điều 8 khoản 5, 6 Luật 91/2025/QH15; khoản 4 Điều 7 NĐ 330/2026).
 - Mức phạt cho mục 5-7 (TMĐT, AI): chưa xác minh được nghị định xử phạt.
 
 Đây là mức tối đa theo quy định tham khảo được, không phải mức site chắc chắn sẽ bị phạt.

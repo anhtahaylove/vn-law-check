@@ -49,14 +49,14 @@ Mức độ xếp như website. App xin quyền truy cập hoặc có SDK tracki
 
 ## Quy mô chủ site
 
-Site của hộ kinh doanh hoặc doanh nghiệp siêu nhỏ được miễn một phần nghĩa vụ dữ liệu cá nhân theo khoản 3 Điều 38 Luật 91/2025 (doanh nghiệp nhỏ, khởi nghiệp được hoãn 5 năm theo khoản 2; Điều 38 không nhắc tới cá nhân; site cá nhân có thuộc diện điều chỉnh hay không: CHƯA XÁC MINH):
+Site của hộ kinh doanh hoặc doanh nghiệp siêu nhỏ được miễn một phần nghĩa vụ dữ liệu cá nhân theo khoản 3 Điều 38 Luật 91/2025 (doanh nghiệp nhỏ, khởi nghiệp được hoãn 5 năm theo khoản 2; Điều 38 không nhắc tới cá nhân. Luật áp dụng cả với cá nhân (điểm a khoản 2 Điều 1) và không thấy điều nào loại trừ việc xử lý vì mục đích cá nhân, nên site cá nhân có thu dữ liệu vẫn thuộc diện điều chỉnh; khi kết luận cho site cá nhân, nhắc nên hỏi người làm luật):
 - miễn lập hồ sơ đánh giá tác động xử lý dữ liệu (DPIA, Điều 21)
 - miễn cập nhật hồ sơ (Điều 22)
 - miễn chỉ định nhân sự bảo vệ dữ liệu (khoản 2 Điều 33)
 
 Không miễn hồ sơ chuyển dữ liệu xuyên biên giới (khoản 2 Điều 20): site dùng hosting, database, API ở nước ngoài vẫn phải xét mục D checklist 01.
 
-Không được miễn nếu xử lý dữ liệu nhạy cảm, xử lý số lượng lớn, hoặc kinh doanh dịch vụ xử lý dữ liệu. Xem đầu checklist 01.
+Không được miễn nếu trực tiếp xử lý dữ liệu nhạy cảm, xử lý dữ liệu của số lượng lớn chủ thể, hoặc kinh doanh dịch vụ xử lý dữ liệu. Xem đầu checklist 01.
 
 Đoán quy mô từ chính site (trang giới thiệu, footer, thông tin đăng ký kinh doanh). Không đoán được thì ghi rõ trong báo cáo là mục D, E checklist 01 "mục E áp dụng nếu không thuộc diện miễn trừ khoản 3 Điều 38", thay vì dừng lại hỏi.
 

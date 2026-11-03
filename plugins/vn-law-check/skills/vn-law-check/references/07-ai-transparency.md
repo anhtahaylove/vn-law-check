@@ -16,26 +16,26 @@ Luật chia 2 vai trò, mỗi vai trò có nghĩa vụ khác nhau:
 - [ ] Tin nhắn người dùng gõ vào chatbot có thể chứa dữ liệu cá nhân và được gửi tới bên thứ ba (thường ở nước ngoài) → kiểm tra thêm checklist 01 mục B (đồng ý) và D (chuyển dữ liệu xuyên biên giới).
 
 ## C. Nội dung do AI tạo (Điều 11 khoản 2, 3, 4)
-- [ ] Văn bản, ảnh, âm thanh, video do AI tạo hoặc chỉnh sửa, nếu có thể gây nhầm lẫn về tính xác thực, phải được **thông báo rõ trước hoặc ngay khi** người xem tiếp cận nội dung (khoản 3, nghĩa vụ của bên triển khai).
+- [ ] Văn bản, ảnh, âm thanh, video do AI tạo hoặc chỉnh sửa, nếu có thể gây nhầm lẫn về tính xác thực, phải được thông báo rõ (khoản 3, nghĩa vụ của bên triển khai). Mốc **trước hoặc tại thời điểm** người xem tiếp cận nội dung đến từ Điều 18 NĐ 142/2026.
 - [ ] Ảnh, âm thanh, video mô phỏng người thật hoặc tái hiện sự kiện có thật (deepfake) phải có **nhãn dễ nhận biết** (khoản 4). Với tác phẩm điện ảnh, nghệ thuật, sáng tạo, nhãn không được cản trở việc thưởng thức tác phẩm.
 - [ ] Âm thanh, hình ảnh, video do AI tạo được đánh dấu ở **định dạng máy đọc được** (ví dụ metadata, watermark kỹ thuật). Đây là nghĩa vụ của nhà cung cấp (khoản 2).
 - [ ] Vị trí đặt nhãn (Điều 18 NĐ 142/2026): trên chính nội dung, ở tiêu đề hoặc chú thích, trên giao diện nền tảng, hoặc bằng thông báo âm thanh. Bộ Khoa học và Công nghệ sẽ ban hành hướng dẫn kỹ thuật.
-- [ ] Thông tin minh bạch được duy trì suốt thời gian cung cấp hệ thống hoặc nội dung (khoản 5).
+- [ ] Thông tin minh bạch được duy trì suốt thời gian cung cấp hệ thống hoặc nội dung (khoản 5). Đánh số khoản 4-6 Điều 11 giữa các nguồn chưa thống nhất: cần tra cứu lại.
 
-**Không cần gắn nhãn** khi:
+**Không cần gắn nhãn** khi (Điều 18 khoản 4 NĐ 142/2026, theo nguồn thứ cấp):
 - chỉ chỉnh sửa kỹ thuật, không đổi bản chất nội dung
-- sửa chính tả, dịch thuật
-- dùng nội bộ
-- nội dung nghiên cứu chưa công bố
+- sửa chính tả, dịch thuật, tóm tắt, diễn giải mà không làm sai lệch nội dung cơ bản
+- dùng nội bộ, không cung cấp ra công cộng
+- nội dung nghiên cứu trong môi trường kiểm soát, chưa công bố
 
 ## D. Phân loại rủi ro (Điều 9)
-- [ ] Xác định mức rủi ro của hệ thống AI: cao, trung bình, thấp. Chatbot hỏi đáp hay tạo nội dung marketing thường không phải rủi ro cao. Tiêu chí cụ thể từng mức: CHƯA XÁC MINH.
-- [ ] Nếu là hệ thống rủi ro cao (ví dụ AI ra quyết định ảnh hưởng quyền lợi người dùng trong tín dụng, tuyển dụng, y tế): phải được đánh giá và chứng nhận trước khi vận hành.
-- [ ] Cơ chế giải thích, khiếu nại, yêu cầu con người xem xét lại khi AI ra quyết định: điều khoản cụ thể CHƯA XÁC MINH.
+- [ ] Xác định mức rủi ro của hệ thống AI (Điều 9 khoản 1, theo nguồn thứ cấp): **cao** là có thể gây thiệt hại đáng kể tới tính mạng, sức khỏe, quyền lợi hợp pháp; **trung bình** là có thể gây nhầm lẫn, thao túng do người dùng không biết đang tương tác với AI; **thấp** là phần còn lại. Căn cứ phân loại: tác động tới quyền con người, an toàn, an ninh; lĩnh vực sử dụng; quy mô người dùng (khoản 2). Chatbot không cho người dùng biết là AI có thể rơi vào mức trung bình.
+- [ ] Hệ thống rủi ro cao (ví dụ AI ra quyết định trong tín dụng, tuyển dụng, y tế): phải đánh giá sự phù hợp trước khi đưa vào sử dụng (Điều 13 khoản 1). Chỉ hệ thống thuộc danh mục bắt buộc do Thủ tướng ban hành mới phải do tổ chức được đăng ký đánh giá; còn lại nhà cung cấp tự đánh giá hoặc thuê đánh giá (khoản 2, 4).
+- [ ] Cung cấp cho người bị ảnh hưởng thông tin về chức năng, cách vận hành, cảnh báo rủi ro (Điều 14 khoản 1 điểm e, khoản 2 điểm đ, theo nguồn thứ cấp). Quyền khiếu nại, yêu cầu con người xem xét lại: CHƯA XÁC MINH.
 
 ## E. Thời hạn chuyển tiếp (Điều 35)
-- [ ] Hệ thống AI đã vận hành trước 01/03/2026 có thời hạn để tuân thủ: **18 tháng** với y tế, giáo dục, tài chính; **12 tháng** với lĩnh vực khác. Trong thời gian này vẫn được hoạt động, trừ khi bị đánh giá là có nguy cơ gây thiệt hại nghiêm trọng.
+- [ ] Hệ thống AI đã vận hành trước 01/03/2026 có thời hạn để tuân thủ: **18 tháng** với y tế, giáo dục, tài chính (tức đến khoảng 01/09/2027); **12 tháng** với lĩnh vực khác (khoảng 01/03/2027). Trong thời gian này vẫn được hoạt động, trừ khi bị đánh giá là có nguy cơ gây thiệt hại nghiêm trọng.
 - [ ] Hệ thống đưa vào sau 01/03/2026: áp dụng ngay.
 
 ## Mức phạt
-Điều 29 khoản 5 Luật 134/2025 giao Chính phủ quy định xử phạt hành chính. Số hiệu nghị định xử phạt và mức phạt: CHƯA XÁC MINH.
+Điều 29 khoản 5 Luật 134/2025 giao Chính phủ quy định xử phạt hành chính. Chưa thấy nghị định xử phạt riêng về AI tại thời điểm cập nhật. Không dùng con số "2 tỷ đồng" báo chí hay nhắc: đó là con số trong dự thảo luật, không phải luật đã ban hành.

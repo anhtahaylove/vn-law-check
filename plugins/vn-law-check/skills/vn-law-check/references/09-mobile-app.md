@@ -4,7 +4,7 @@ Dùng kèm các checklist khác, không thay thế. App thu email/SĐT vẫn áp
 
 **Văn bản áp dụng:**
 - Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 ([thuvienphapluat](https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Bao-ve-du-lieu-ca-nhan-2025-so-91-2025-QH15-625628.aspx)) và Nghị định 356/2025/NĐ-CP ([toàn văn](https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Nghi-dinh-356-2025-ND-CP-huong-dan-Luat-Bao-ve-du-lieu-ca-nhan-687428.aspx))
-- Văn bản hợp nhất 08/VBHN-BCT ngày 03/02/2026, hợp nhất Thông tư 59/2015/TT-BCT về TMĐT qua ứng dụng di động ([luatvietnam](https://luatvietnam.vn/thuong-mai/van-ban-hop-nhat-08-vbhn-bct-2026-quan-ly-hoat-dong-thuong-mai-dien-tu-qua-ung-dung-di-dong-426039-d5.html)). Văn bản này vẫn dẫn căn cứ NĐ 52/2013. Còn hiệu lực sau 01/07/2026 (khi Luật TMĐT 122/2025 có hiệu lực) hay không: CHƯA XÁC MINH.
+- Văn bản hợp nhất 42/VBHN-BCT ngày 04/06/2026, hợp nhất Thông tư 59/2015/TT-BCT về TMĐT qua ứng dụng di động với các lần sửa (mới nhất TT 26/2026) ([luatvietnam](https://luatvietnam.vn/thuong-mai/van-ban-hop-nhat-42-vbhn-bct-2026-quan-ly-thuong-mai-dien-tu-qua-ung-dung-di-dong-437088-d5.html)). Thay bản hợp nhất cũ 08/VBHN-BCT (03/02/2026). Thông tư này hướng dẫn NĐ 52/2013, đã hết hiệu lực từ 01/07/2026, nên có thể không còn là căn cứ chính: cần tra cứu lại. Ưu tiên checklist 02 theo Luật 122/2025.
 - Nghị định 147/2024/NĐ-CP, quản lý dịch vụ Internet và thông tin trên mạng, hiệu lực 25/12/2024 ([tóm tắt](https://luatvietan.vn/nghi-dinh-147-2024-nd-cp-quan-ly-cung-cap-su-dung-dich-vu-internet-va-thong-tin-tren-mang.html))
 - Nghị định 342/2025/NĐ-CP, hướng dẫn Luật Quảng cáo ([Điều 17](https://hethongphapluat.com/nghi-dinh-342-2025-nd-cp-huong-dan-luat-quang-cao/dieu-17))
 - Luật Bảo vệ quyền lợi người tiêu dùng 19/2023/QH15 ([Điều 10 khoản 3](https://hethongphapluat.com/luat-bao-ve-quyen-loi-nguoi-tieu-dung-2023/khoan-3-dieu-10))
@@ -26,7 +26,7 @@ Luật không có điều riêng cho từng loại quyền camera, danh bạ, v�
 - [ ] Xin quyền đúng lúc dùng tính năng và nói rõ lý do, không xin hết một lượt khi vừa mở app. Trên iOS, câu giải thích trong `Info.plist` (các key `NS...UsageDescription`) phải nói đúng mục đích thật, không ghi chung chung.
 - [ ] Quyền vị trí chạy nền (`ACCESS_BACKGROUND_LOCATION`, `NSLocationAlwaysUsageDescription`) có lý do rõ ràng. Theo NĐ 356/2025, vị trí có được xếp là dữ liệu nhạy cảm hay không: CHƯA XÁC MINH. Vẫn nên xử lý như dữ liệu nhạy cảm cho an toàn.
 - [ ] Từ chối một quyền thì app vẫn dùng được các tính năng không cần quyền đó.
-- [ ] Chính sách bảo mật liệt kê dữ liệu app thu thập **khi cài đặt và khi sử dụng**. Với app bán hàng, đây là yêu cầu ở Điều 5 khoản 3 của 08/VBHN-BCT. Với app mạng xã hội, xem mục E.
+- [ ] Chính sách bảo mật liệt kê dữ liệu app thu thập **khi cài đặt và khi sử dụng**. Với app bán hàng, đây là yêu cầu ở Điều 5 khoản 3 của 42/VBHN-BCT. Với app mạng xã hội, xem mục E.
 - [ ] Link chính sách bảo mật mở được từ bên trong app, không chỉ để trên store.
 
 ## C. Xóa tài khoản và xóa dữ liệu
@@ -52,9 +52,9 @@ Luật không có điều riêng cho từng loại quyền camera, danh bạ, v�
 - [ ] Xác thực tài khoản bằng số điện thoại di động Việt Nam. Chỉ tài khoản đã xác thực mới được đăng bài, bình luận, livestream (NĐ 147/2024/NĐ-CP). Số điều: CHƯA XÁC MINH, vì các nguồn dẫn Điều 23 và Điều 27 không thống nhất. Mạng xã hội nước ngoài chỉ thuộc diện áp dụng khi thuê lưu trữ tại Việt Nam, hoặc có từ 100.000 lượt truy cập/tháng từ Việt Nam liên tục 6 tháng.
 - [ ] Gỡ nội dung vi phạm trong 24 giờ khi cơ quan có thẩm quyền yêu cầu, 48 giờ với khiếu nại có căn cứ của người dùng (khoản 7 Điều 36 NĐ 147/2024, theo bản tóm tắt).
 
-## F. App bán hàng, sàn TMĐT (08/VBHN-BCT)
+## F. App bán hàng, sàn TMĐT (42/VBHN-BCT)
 
-Hiệu lực của văn bản này sau 01/07/2026: CHƯA XÁC MINH. Xem thêm checklist 02 về Luật TMĐT 122/2025. Luật 122/2025 có tính app là "nền tảng TMĐT" hay không: CHƯA XÁC MINH.
+Điều 41 khoản 1 Luật 122/2025 nhắc rõ "ứng dụng thương mại điện tử" trong quy định chuyển tiếp, nên app bán hàng nằm trong khung luật mới: audit theo checklist 02 trước. Các mục dưới đây theo Thông tư 59/2015 (khung cũ), dùng tham khảo; hiệu lực sau 01/07/2026: cần tra cứu lại.
 - [ ] App bán hàng có chức năng đặt hàng đã **thông báo** với Bộ Công Thương: tên app, địa chỉ tải, thông tin chủ sở hữu (Điều 5 khoản 1, Điều 11). Một lần thông báo dùng chung cho mọi phiên bản app (Điều 4 khoản 2).
 - [ ] App sàn hoặc trung gian TMĐT đã **đăng ký** với Bộ Công Thương. App công bố quy chế, chính sách bảo mật, cơ chế giải quyết tranh chấp (Điều 6, Điều 14-17).
 - [ ] Hiển thị tên chủ sở hữu, địa chỉ, điện thoại hoặc email trong app (Điều 5 khoản 2).

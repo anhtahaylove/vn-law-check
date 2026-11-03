@@ -45,13 +45,13 @@ Lưu file theo cấu trúc sẵn có của project (ví dụ `app/chinh-sach-bao
 
 Chính sách đăng lên chưa đủ. Sửa luôn chỗ xin đồng ý theo mẫu phần "Form đồng ý" và "Banner cookie" trong `examples/privacy-policy-template.md`:
 
-- **Form thu thập:** ô đồng ý không tích sẵn, có link tới chính sách (Điều 9 khoản 4 Luật 91/2025).
-  - Form có nhiều mục đích (ví dụ đặt hàng + nhận khuyến mãi): ô bắt buộc cho mục đích chính, ô **riêng, không bắt buộc** cho marketing (Điều 9 khoản 4 điểm a, b; Điều 28 khoản 3).
+- **Form thu thập:** ô đồng ý không tích sẵn (khoản 3 Điều 6 NĐ 356/2025), có link tới chính sách (khoản 2 Điều 9 Luật 91/2025).
+  - Form có nhiều mục đích (ví dụ đặt hàng + nhận khuyến mãi): ô bắt buộc cho mục đích chính, ô **riêng, không bắt buộc** cho marketing (Điều 9 khoản 4 điểm a, b; khoản 8 Điều 28 nếu dùng cho quảng cáo nhắm mục tiêu).
   - Form chỉ có một mục đích (ví dụ form đăng ký nhận tin): một ô đồng ý bắt buộc nêu rõ mục đích đó là đủ, vì đăng ký chính là đồng ý nhận tin.
   - Form chỉ thu thêm trường không cần cho mục đích (ví dụ form nhận tin qua email mà hỏi cả SĐT): gợi ý bỏ trường đó thay vì viết thêm mục đích.
 - **Bỏ câu kiểu "tiếp tục sử dụng là đồng ý"** (Điều 9 khoản 4 điểm d).
 - **Script tracking/quảng cáo:** chỉ nạp sau khi người dùng bấm đồng ý. Từ chối vẫn dùng được site.
-- **Lưu bằng chứng đồng ý:** thời điểm, nội dung/phiên bản chính sách, mục đích đã đồng ý (NĐ 356/2025 yêu cầu kiểm chứng được thời điểm và nội dung, số điều CHƯA XÁC MINH). Với form: lưu ở server cùng bản ghi. Với banner cookie: lưu trong trình duyệt là tối thiểu; nếu site có backend thì gửi thêm một bản ghi ẩn danh (mã ngẫu nhiên, thời điểm, lựa chọn, phiên bản) về server. Không có backend thì ghi rõ giới hạn này trong báo cáo cho người dùng.
+- **Lưu bằng chứng đồng ý:** thời điểm, nội dung/phiên bản chính sách, mục đích đã đồng ý (khoản 1, 2 Điều 6 NĐ 356/2025: kiểm chứng được ai đồng ý, thời điểm và nội dung; bên kiểm soát phải chứng minh khi có tranh chấp). Với form: lưu ở server cùng bản ghi. Với banner cookie: lưu trong trình duyệt là tối thiểu; nếu site có backend thì gửi thêm một bản ghi ẩn danh (mã ngẫu nhiên, thời điểm, lựa chọn, phiên bản) về server. Không có backend thì ghi rõ giới hạn này trong báo cáo cho người dùng.
 - **Rút lại đồng ý:** có cách rút dễ như lúc đồng ý (nút cài đặt cookie, link hủy đăng ký email, trang tài khoản) (Điều 10 Luật 91/2025). Link hủy đăng ký email phải kèm mã riêng cho từng người nhận, không làm endpoint hủy chỉ cần nhập email (ai cũng hủy được của người khác). Code chưa có phần gửi email thì chỉ ghi vào danh sách việc cần làm.
 - **Chatbot AI:** nếu site có chatbot, áp dụng thêm checklist 07: báo rõ người dùng đang nói chuyện với AI, không để bot xưng là nhân viên thật, và nêu trong chính sách nội dung chat được gửi cho nhà cung cấp AI nào.
 

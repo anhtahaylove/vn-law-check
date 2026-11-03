@@ -21,7 +21,7 @@ Khung để agent điền theo `references/10-generate-policy.md`. Mỗi mục c
 - Địa chỉ: [ĐIỀN]
 - Email tiếp nhận yêu cầu về dữ liệu cá nhân: [ĐIỀN]
 
-> Căn cứ: Điều 9 khoản 2 Luật 91/2025/QH15: người dùng phải biết rõ bên kiểm soát dữ liệu khi đồng ý.
+> Căn cứ: điểm b khoản 2 Điều 9 Luật 91/2025/QH15: người dùng phải biết rõ bên kiểm soát dữ liệu khi đồng ý.
 
 ## 2. Dữ liệu chúng tôi thu thập và mục đích
 
@@ -39,9 +39,9 @@ Chúng tôi không dùng dữ liệu cho mục đích khác ngoài bảng trên 
 
 [Chỉ giữ mục này nếu site xử lý dữ liệu thuộc danh mục nhạy cảm theo NĐ 356/2025, ví dụ vị trí, sức khỏe, thông tin thẻ ngân hàng, hành vi trên không gian mạng.]
 
-Chúng tôi xử lý [loại dữ liệu nhạy cảm] để [mục đích]. Đây là dữ liệu cá nhân nhạy cảm, chúng tôi chỉ xử lý khi bạn đồng ý riêng cho mục đích này.
+Chúng tôi xử lý [loại dữ liệu nhạy cảm] để [mục đích]. Đây là dữ liệu cá nhân nhạy cảm, chúng tôi chỉ xử lý khi bạn đồng ý riêng cho mục đích này. Lời xin đồng ý tại form/banner cũng phải nói rõ đây là dữ liệu nhạy cảm.
 
-> Căn cứ: Điều 2 khoản 3 Luật 91/2025 (danh mục do Chính phủ ban hành); NĐ 356/2025 (danh mục, số điều CHƯA XÁC MINH).
+> Căn cứ: Điều 2 khoản 3 Luật 91/2025 (danh mục do Chính phủ ban hành); khoản 1 Điều 4 NĐ 356/2025 (danh mục; điểm l: dữ liệu theo dõi hành vi trên không gian mạng); khoản 4 Điều 6 NĐ 356/2025 (phải báo là dữ liệu nhạy cảm khi xin đồng ý).
 
 ## 4. Bên thứ ba nhận dữ liệu
 
@@ -72,7 +72,7 @@ Site dùng hai loại cookie:
 
 Bạn đổi lựa chọn bất cứ lúc nào qua nút "Cài đặt cookie" ở cuối trang.
 
-> Căn cứ: Điều 9 khoản 4 điểm d Luật 91/2025 (im lặng không phải là đồng ý); Điều 28 khoản 3, 5 (quảng cáo cần đồng ý, có quyền ngừng nhận).
+> Căn cứ: Điều 9 khoản 4 điểm d Luật 91/2025 (im lặng không phải là đồng ý); khoản 8 Điều 28 (quảng cáo theo hành vi: chỉ theo dõi khi có đồng ý, có cách từ chối, xác định thời gian lưu); điểm l khoản 1 Điều 4 NĐ 356/2025 (dữ liệu theo dõi hành vi là dữ liệu nhạy cảm).
 
 ## 7. Quyền của bạn
 
@@ -92,7 +92,7 @@ Bạn có quyền:
 
 Yêu cầu phức tạp có thể được gia hạn một lần, chúng tôi sẽ báo lý do cho bạn.
 
-> Căn cứ: Điều 4 khoản 1 Luật 91/2025 (danh sách quyền); Điều 10 khoản 2 (rút đồng ý bằng văn bản, kể cả dạng điện tử); Điều 28 khoản 5 (ngừng nhận quảng cáo); Điều 5 khoản 2, 3, 4 NĐ 356/2025 (thời hạn; gia hạn 1 lần tối đa 15/10/20 ngày tương ứng). Không tự rút ngắn hay kéo dài các mốc này.
+> Căn cứ: Điều 4 khoản 1 Luật 91/2025 (danh sách quyền); Điều 10 khoản 2 (rút đồng ý bằng văn bản, kể cả dạng điện tử); Điều 28 khoản 5 (ngừng nhận thông tin quảng cáo); Điều 5 khoản 2, 3, 4 NĐ 356/2025 (thời hạn; gia hạn 1 lần tối đa 15/10/20 ngày tương ứng). Không tự rút ngắn hay kéo dài các mốc này.
 
 ## 8. Trẻ em
 
@@ -100,13 +100,13 @@ Yêu cầu phức tạp có thể được gia hạn một lần, chúng tôi s�
 
 Với người dùng là trẻ em, cha mẹ hoặc người đại diện theo pháp luật thực hiện các quyền thay trẻ. Việc công bố, tiết lộ thông tin đời sống riêng tư của trẻ từ đủ 7 tuổi cần sự đồng ý của cả trẻ và cha mẹ hoặc người đại diện.
 
-> Căn cứ: Điều 24 Luật 91/2025.
+> Căn cứ: khoản 2 Điều 24 Luật 91/2025.
 
 ## 9. Khi có sự cố
 
 Nếu xảy ra lộ, mất dữ liệu cá nhân, chúng tôi thông báo cho cơ quan chuyên trách bảo vệ dữ liệu cá nhân theo quy định. [KIỂM TRA: có cam kết báo cho người dùng bị ảnh hưởng không? Chỉ giữ câu này nếu chủ site làm được: "Chúng tôi cũng báo cho bạn nếu sự cố ảnh hưởng tới dữ liệu của bạn."]
 
-> Căn cứ: Điều 23 khoản 1 Luật 91/2025: thông báo cơ quan chuyên trách chậm nhất 72 giờ kể từ khi phát hiện. Khoản này không bắt buộc báo cho người dùng, nên việc báo người dùng là cam kết tự nguyện của chủ site.
+> Căn cứ: Điều 23 khoản 1 Luật 91/2025: thông báo cơ quan chuyên trách chậm nhất 72 giờ kể từ khi phát hiện. Khoản này không bắt buộc báo cho người dùng, nên việc báo người dùng là cam kết tự nguyện của chủ site. Ngoại lệ: sự cố với dữ liệu vị trí, sinh trắc học thì phải báo người dùng bị ảnh hưởng trong 72 giờ (điểm a khoản 1 Điều 29 NĐ 356/2025); site có loại dữ liệu này thì giữ câu cam kết và ghi rõ 72 giờ.
 
 ## 10. Thay đổi chính sách
 
@@ -150,7 +150,7 @@ await db.consents.insert({
 });
 ```
 
-> Căn cứ: Điều 9 khoản 3 và khoản 4 điểm a, b Luật 91/2025; NĐ 356/2025 yêu cầu kiểm chứng được thời điểm và nội dung đồng ý (số điều CHƯA XÁC MINH).
+> Căn cứ: Điều 9 khoản 3 và khoản 4 điểm a, b Luật 91/2025; khoản 1, 2 Điều 6 NĐ 356/2025 (kiểm chứng được, phải lưu sự đồng ý); khoản 3 Điều 6 (không mặc định đồng ý).
 
 # Banner cookie
 
@@ -203,4 +203,4 @@ Script tracking chỉ nạp sau khi bấm "Đồng ý". Nút "Từ chối" ngang
 
 Dùng Google Tag Manager hoặc nền tảng quản lý đồng ý (CMP) thì bật chế độ consent mode và chặn tag tới khi có đồng ý, thay vì đoạn script trên.
 
-> Căn cứ: Điều 9 khoản 4 điểm d, Điều 10, Điều 28 khoản 3, 5 Luật 91/2025. Luật không có điều riêng về cookie (CHƯA XÁC MINH), xem checklist 01-C.
+> Căn cứ: Điều 9 khoản 4 điểm d, Điều 10, khoản 8 Điều 28 Luật 91/2025; khoản 3 Điều 6 NĐ 356/2025. Chữ "cookies" chỉ xuất hiện ở khoản 3 Điều 29 (áp cho mạng xã hội, dịch vụ truyền thông trực tuyến), xem checklist 01-C.
